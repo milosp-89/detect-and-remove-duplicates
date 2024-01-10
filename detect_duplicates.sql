@@ -1,4 +1,4 @@
--- creation of procedure for duplicates
+-- Stored procedure for detecting duplicates rows/entries
 
 use [xxx];
 go
