@@ -1,7 +1,7 @@
 ---- template script for removing duplicates ----
 
-declare @db_name varchar(50) = ' DeviceMagic_xxx' -- database name
-declare @tbl_name varchar(50) = 'xxx' -- table name
+declare @db_name varchar(50) = ' xxx' -- db name
+declare @tbl_name varchar(50) = 'xxx' -- tbl name
 
 select 'use' + @db_name + ';
 go
