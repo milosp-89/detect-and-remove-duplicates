@@ -1,4 +1,4 @@
--- Stored procedure for detecting duplicates rows/entries
+-- stored procedure for detecting duplicates rows/entries
 
 use [xxx];
 go
@@ -69,5 +69,5 @@ begin
 	end 
 	close cur 
 	deallocate cur
-end
+end;
 go
