@@ -1,4 +1,4 @@
----- template script for removing duplicates ----
+-- template script for removing dupplicated entries/rows
 
 declare @db_name varchar(50) = ' xxx' -- db name
 declare @tbl_name varchar(50) = 'xxx' -- tbl name
