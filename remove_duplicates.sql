@@ -6,17 +6,17 @@ declare @tbl_name varchar(50) = 'xxx' -- tbl name
 select 'use' + @db_name + ';
 go
 
-WITH cte AS (
-	SELECT
-		submission_id,
-		ROW_NUMBER() OVER (
-			PARTITION BY 
-				submission_id
-			ORDER BY 
-				submission_id
+with cte as (
+	select
+		id_col,
+		row_number() over (
+			partition by 
+				id_col
+			order by 
+				id_col
 		) as row_num
-		FROM ' + @tbl_name + '
+		from ' + @tbl_name + '
 )
-DELETE FROM cte
-WHERE row_num > 1;
+delete from cte
+where row_num > 1;
 go'
