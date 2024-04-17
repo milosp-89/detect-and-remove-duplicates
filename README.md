@@ -1,3 +1,5 @@
+# Structure consist of two phases:
+
 # Detect duplicates:
 - Stored procedure to detect duplicated rows/entries across all databases and to store results within duplicates_log table.
   This procedure can be activated on demand or via SQL job automaticaly on a daily basis or weekly (perfect approach if
